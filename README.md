@@ -1,2 +1,2 @@
-# smartTransactionManagement
-Smart transaction management app is build up in AngularJs
+# Smart Transaction Management
+Smart transaction management app is a smaple app build up in AngularJs used to manage transactions and history
