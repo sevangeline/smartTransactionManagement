@@ -1,0 +1,31 @@
+<div class="panel panel-success">
+    <div class="panel-heading"><h4>View All Transactions</h4></div>
+    <div class="panel-body row">
+        <div class="table-responsive" ng-show="!transactionVm.isLoading">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">User</th>
+                        <th scope="col">Transaction Id</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">Currency</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="x in transactionVm.txnList">
+                        <th scope="row">{{$index + 1}}</th>
+                        <td>{{x.user}}</td>
+                        <td>{{x.id}}</td>
+                        <td>{{x.amount}}</td>
+                        <td>{{x.currency}}</td>
+                        <td>{{x.txn_date}}</td>
+                        <td><span class="glyphicon glyphicon-trash" ng-click="transactionVm.deleteAction(x.id)"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

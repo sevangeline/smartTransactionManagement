@@ -1,0 +1,26 @@
+.paymentForm {
+    display: inline-block;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 2px #ccc;
+    padding: 20px;
+}
+
+.formInputs {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    float: right;
+}
+.selectBox {
+    width: 53%;
+}
+
+.panel {
+    margin: 20px;
+}
+
+.txnHistoryBlock{
+    margin-top: 20px;
+}

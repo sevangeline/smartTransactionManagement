@@ -1,0 +1,41 @@
+<div class="panel panel-success">
+    <div class="panel-heading"><h4>Quick Filter</h4></div>
+    <div class="panel-body row">
+        <div class="alert alert-warning fade in" ng-if="dashboardCtrlVm.txnHistoryFailed">
+            <i class="fa-fw fa fa-warning"></i>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <h5>No transactions found for this transaction id</h5>
+        </div>
+        <div class="col-sm-offset-4 col-sm-4 paymentForm">
+            <div class="col-sm-12">
+                <button type="submit" class="btn btn-success btn-sm pull-right" ng-click="dashboardCtrlVm.getTransactionHistoryById()">Search</button>
+                <input type="text" placeholder=" Enter Transaction id" class="formInputs pull-left" ng-model="dashboardCtrlVm.txnFilterId">
+            </div>
+        </div>
+        <div class="col-sm-offset-4 col-sm-4 paymentForm txnHistoryBlock" ng-if="dashboardCtrlVm.isServiceSuccess">
+            <button type="button" class="close" ng-click="dashboardCtrlVm.closeTxnHistory()">&times;</button>
+            <div class="col-sm-12">
+                <label class="col-sm-6 control-label">User email</label>
+                <span class="col-sm-6">{{dashboardCtrlVm.txnHistory.user}}</span>
+            </div>
+            <div class="col-sm-12">
+                <label class="col-sm-6 control-label">Transaction id</label>
+                <span class="col-sm-6">{{dashboardCtrlVm.txnHistory.id}}</span>
+            </div>
+            <div class="col-sm-12">
+                <label class="col-sm-6 control-label">Amount</label>
+                <span class="col-sm-6">{{dashboardCtrlVm.txnHistory.amount}}</span>
+            </div>
+            <div class="col-sm-12">
+                <label class="col-sm-6 control-label">Currency</label>
+                <span class="col-sm-6">{{dashboardCtrlVm.txnHistory.currency}}</span>
+            </div>
+            <div class="col-sm-12">
+                <label class="col-sm-6 control-label">Transaction Date</label>
+                <span class="col-sm-6">{{dashboardCtrlVm.txnHistory.txn_date}}</span>
+            </div>
+        </div>
+    </div>
+</div>

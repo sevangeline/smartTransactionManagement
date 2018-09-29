@@ -1,0 +1,18 @@
+<div>
+    <div class="modal-header">
+        <h3 class="modal-title">{{modalCtrl.data.title}}</h3>
+    </div>
+
+    <div class="modal-body">
+        <h4>{{modalCtrl.data.msg}}</h4>
+        <h5>{{modalCtrl.data.content}}</h5>
+    </div>
+
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-show="modalCtrl.data.showOk" ng-click="modalCtrl.ok()">OK</button>
+        <button class="btn btn-primary" type="button" ng-show="modalCtrl.data.showYes" ng-click="modalCtrl.yes()">Yes</button>
+        <button class="btn btn-warning" type="button" ng-show="modalCtrl.data.showCancel" ng-click="modalCtrl.cancel()">Cancel</button>
+    </div>
+
+</div>
+
