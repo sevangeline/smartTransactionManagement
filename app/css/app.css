@@ -12,9 +12,7 @@
     box-sizing: border-box;
     margin-bottom: 20px;
     float: right;
-}
-.selectBox {
-    width: 53%;
+    width: 180px;
 }
 
 .panel {

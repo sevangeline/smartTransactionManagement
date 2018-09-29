@@ -12,14 +12,10 @@
             </div>
             <div class="col-sm-12">
                 <label class="control-label">Currency</label>
-                <!--<span ng-repeat="type in paymentFormVm.currencyType">-->
-                <!--<input type="radio" ng-model="paymentFormVm.transactionDetails.currency" value="type"/>-->
-                <!--</span>-->
-                <select class="formInputs selectBox"
+                <select class="formInputs"
                         ng-model="paymentFormVm.transactionDetails.currency"
                         ng-options="option for option in paymentFormVm.currencyType">
                 </select>
-                <!--<span ng-bind-html="paymentFormVm.transactionDetails.amount | currencyWithLocale: paymentFormVm.transactionDetails.currency"></span>-->
             </div>
             <div class="col-sm-12">
                 <label class="control-label">Date</label>
